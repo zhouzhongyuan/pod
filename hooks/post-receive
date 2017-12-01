@@ -12,6 +12,8 @@ git reset --hard origin/master
 
 # if has .podhook, execute that; otherwise default
 if [ -f .podhook ]; then
+	echo zzy
+	echo $PWD
 	bash .podhook
 	rc=$?
 	if [[ $rc != 0 ]]; then
